@@ -19,7 +19,7 @@ Cho một mảng chưa sắp xếp các số nguyên gồm $n$ phần tử và m
 
 ## 2. Mô tả giải thuật chi tiết 
 
-### Phương pháp: Sắp xếp Quick Sort + 2 Con trỏ (Two Pointers)
+### Phương pháp: Sắp xếp Quick Sort và 2 Con trỏ (Two Pointers)
 
 #### **Ý tưởng:**
 1. Một mảng đã được sắp xếp tăng dần cho phép ta sử dụng hai con trỏ `low` (ở đầu mảng) và `high` (ở cuối mảng) để duyệt tìm các cặp số một cách hiệu quả.
@@ -28,7 +28,7 @@ Cho một mảng chưa sắp xếp các số nguyên gồm $n$ phần tử và m
 4. Nếu tổng $arr[low] + arr[high] > target$: Tổng hiện tại lớn hơn `target` thì cần giảm giá trị nên dịch `high` sang trái (`high--`).
 
 #### **Các bước thực hiện:**
-1. **Nhập dữ liệu & Cấp phát bộ nhớ:**
+1. **Nhập dữ liệu và Cấp phát bộ nhớ:**
    * Nhập số lượng phần tử $n$.
    * Cấp phát bộ nhớ động bằng `malloc()` để lưu $n$ số nguyên.
    * Nhập mảng và giá trị `target`.
