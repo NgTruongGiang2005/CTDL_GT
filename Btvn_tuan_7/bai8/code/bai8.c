@@ -25,7 +25,7 @@ int main(){
     printf("Mang sau khi sap xep:");
     printf("[");
     for(int i=0;i<n;i++){
-        printf("%d%s",arr[i],(i < n-1 ?", " : ""));
+        printf(" %d%s",arr[i],(i < n-1 ?", " : ""));
     }printf("]");
     return 0; 
 }
